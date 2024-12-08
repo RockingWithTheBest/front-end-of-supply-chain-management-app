@@ -1,0 +1,38 @@
+label.name, label.message, label.email {
+    color: black;
+    font-size: 20px;
+    font-style: italic;
+}
+
+input.name, input.email{
+    width: 299px;
+    height: 25px;
+    margin-left: 14px;
+}
+
+form.mailingEmployee {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+div.messageDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+}
+
+.textfieldMessage{
+    width: 299px;
+    height: 200px;
+}
+
+input.send-btn {
+    width: 214px;
+    height: 39px;
+    border-radius: 14px;
+    background: #1976d2;
+    color: wheat;
+    font-size: 18px;
+}

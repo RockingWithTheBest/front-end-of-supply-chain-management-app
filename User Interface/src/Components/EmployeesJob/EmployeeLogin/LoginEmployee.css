@@ -1,0 +1,27 @@
+.inputlabel{
+    width: 199px;
+}
+form.formLogin {
+    width: 553px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 49px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 22px;
+    background-color: white; 
+}
+div#demo-simple-select-filled, .textfield {
+    width: 200px;
+}
+
+.loginpage {
+    background: linear-gradient(135deg, #ff7e5f, #feb47b); /* Dazzling gradient background */
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #00aaff, #0047ab); 
+    width: 100vw;
+    color: black;
+}

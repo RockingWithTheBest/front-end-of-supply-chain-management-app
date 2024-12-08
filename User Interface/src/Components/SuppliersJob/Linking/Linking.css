@@ -1,0 +1,21 @@
+.DataLog {
+    display: flex;
+    gap: 66px;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: linear-gradient(135deg, #00aaff, #0047ab);
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+.logistic {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    border-radius: 8px;
+    background-color: white;
+    width: 337px;
+    height: 663px;
+    color: black;
+}

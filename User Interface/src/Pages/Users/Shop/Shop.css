@@ -1,0 +1,79 @@
+.shopTitle {
+    color: black;
+    text-align: center;
+    font-size: 40px;
+}
+
+.products {
+    margin: 0;
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    place-items: center;
+    position: relative;
+    left: -17px;
+}
+ h1.rock {
+    font-size: 37px;
+    line-height: 1.1;
+    font-family: Roboto;
+}
+.product {
+    width: 285px;
+    height: 489px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+.product:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* More pronounced shadow on hover */
+}
+
+.links a, .shop {
+    text-decoration: none;
+    color: white;
+    margin-left: 0;
+    font-size: 25px;
+    font-family: Roboto;
+    background-color: white;
+}
+.product img {
+    width: 243px;
+    height: 188px;
+    object-fit: fill;
+    border-radius: 112px;
+}
+
+.product .description{
+    text-align  : center;
+}
+
+.product:hover{
+    transition: 0.3s ease-in;
+    cursor: pointer;
+}
+
+.addToCartBttn{
+    background-color: transparent;
+    border: 2px solid rgb(19,19,19);
+    min-width: 100px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius:15px;
+}
+
+.addToCartBttn:hover{
+    background-color:rgb(19,19,19);
+    color:white;
+
+}
+

@@ -1,0 +1,33 @@
+.divider {
+    display: flex;
+    gap: 29px;
+    position: relative;
+    justify-content: center;
+}
+
+.logistics {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for the logistics div */
+    padding: 16px; /* Add some padding */
+    border-radius: 8px; /* Optional: rounded corners */
+    background-color: white; /* Background color */
+    color: black;
+}
+
+.dividerTable {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for the dividerTable div */
+    padding: 16px; /* Add some padding */
+    border-radius: 8px; /* Optional: rounded corners */
+    background-color: white; /* Background color */
+    margin-left: 16px; /* Space between the two boxes */
+    color: black;
+}
+.allCata {
+    display: flex;
+    gap: 562px;
+    align-items: center;
+    justify-content: center;
+}
+.filterProduc {
+    display: flex;
+    gap: 23px;
+}

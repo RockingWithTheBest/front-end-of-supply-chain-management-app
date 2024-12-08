@@ -1,0 +1,31 @@
+.backEdition{
+    background-image: url();
+}
+/* #root {
+    max-width: 0;
+    margin: 0 ;
+    padding: 0;
+    text-align: 0;
+} */
+.error{
+    color: red;
+}
+
+label {
+    color: white;
+    font-size: 20px;
+    font-style: italic;
+}
+.inputLabel {
+    margin-bottom: 13px;
+}
+input.inputfields {
+    width: 100%;
+    height: 53%;
+}
+.btn{
+    margin-top: 20px;
+}
+input{
+    text-align: center;
+}
