@@ -13,7 +13,7 @@ const LoginEmployee= () =>{
     const [password, setPassword] = useState('');
     const [employeeId, setCustomerId] = useState('');
     const [record, setRecord] = useState([]);
-    const [navigate, setNavigate] = useNavigate();
+    const navigate = useNavigate();
    
     const API_URL = 'https://localhost:7136/';
     const items = async() =>{
