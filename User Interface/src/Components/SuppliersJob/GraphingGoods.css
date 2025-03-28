@@ -1,0 +1,14 @@
+.graphing {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 125px;
+   
+}
+.log {
+    background: linear-gradient(135deg, #9ca7ad, #1a2a41);
+    padding: 62px;
+    padding-top: 159px;
+    padding-bottom: 159px;
+    border-radius: 8px;
+}
