@@ -30,7 +30,7 @@ const Logistics =()=>{
                     <Link to = '/OrderCheckSupplier'><li className='order' onClick ={translateToOrderCheck}><span className="notification-count">{notificationCount}</span><img src={Order} alt="" className='icon-2'/>Orders</li></Link>          
                     <li className='employ'><img src={Employees} alt="" className='icon-3'/>Employees</li>
                     <Link to = '/OrderLinkinToProduct'><li className='ware'><img src={Warehouse} alt="" className='icon-4'/>Warehouse</li></Link>
-                    <li className='goods'><img src={Graphs} alt="" className='icon-5'/>Goods Graphing</li>
+                    <Link to = '/goodgraphing'><li className='goods'><img src={Graphs} alt="" className='icon-5'/>Goods Graphing</li></Link>
                 </ul>
             </div>
 
