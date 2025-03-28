@@ -16,6 +16,7 @@ import EmployeeRegistration from './Pages/Employees/Registration';
 import EmployeeLogin from './Pages/Employees/Login';
 import EmployeeDashboard from './Components/EmployeesJob/EmployeeDashboard/EmployeeDashBoard';
 import EmployeeDash from './Pages/Employees/Dashboard';
+import GoodGraphing from './Components/SuppliersJob/GoodGraphing.jsx'
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
         {/* <Route path='/:slug' element={<ProductDetail />} /> */}
         <Route path="/UserValidation" element={<RebuiltForm />}/>
         <Route path="/Supplier" element={<Supplier />} />
+        <Route path='/goodgraphing' element={<GoodGraphing/>}/>
         <Route path="/OrderLinkinToProduct" element={<OrderLink/>} />
         <Route path="/OrderCheckSupplier" element={<OrderCheckSupplier />} />
         <Route path="/MailingOrder" element={<MailingOrder />} />
