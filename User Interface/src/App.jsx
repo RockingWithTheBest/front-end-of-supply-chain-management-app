@@ -29,7 +29,7 @@ function App() {
         <Route path='/LoginEmployee' element={<EmployeeLogin/>}/>
         <Route path ='/Customer/*' element ={<UserRoute/>}/>
         {/* <Route path='/:slug' element={<ProductDetail />} /> */}
-        <Route path="/UserValidation" element={<RebuiltForm />}/>
+       <Route path="/ClientRegistration" element={<RebuiltForm />}/>
         <Route path="/Supplier" element={<Supplier />} />
         <Route path='/goodgraphing' element={<GoodGraphing/>}/>
         <Route path="/OrderLinkinToProduct" element={<OrderLink/>} />
