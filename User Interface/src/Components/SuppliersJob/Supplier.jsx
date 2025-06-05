@@ -7,7 +7,8 @@ import Logistics from './Logistics/Logistics';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 import DeleteIcon from '@mui/icons-material/Delete';
-
+import jsPDF from 'jspdf';
+import 'jspdf-autotable';
 
 
 const columns =(handleDelete)=> [
@@ -96,6 +97,35 @@ const Supplier = ()=>{
         }
         
     }
+
+     const generatePDF = ()=>{
+        const doc =  new jsPDF();
+        doc.text("Доступные продукты", 20, 10)
+        const headers = ["Name", "Brand", "Catergory", "Price", "Quantity"]
+        const headerY = 20;
+        headers.forEach((header,index)=>{
+            doc.setFontSize(12);
+            doc.text(header, 20 + index * 40, headerY + 10);
+        })
+
+        let rowY = headerY+20;
+        records.forEach(product=>{
+            const data = [
+                String(product.Name || ""),
+                String(product.Brand || ""),
+                String(product.Description || ""),
+                String(product.Price || ""),
+                String(product.StockQuantity || "")
+             ]
+             data.forEach((item,index)=>{
+                doc.text(item, 20+index*40, rowY)
+             })
+             rowY+=10;
+        })
+
+        doc.save("Отчет_продуктов.pdf")
+    }
+    
     useEffect(() => {
         refreshItems(); // Call refreshItems on component mount
     }, []);
@@ -145,6 +175,7 @@ const Supplier = ()=>{
                         <h2>All Catergories</h2>
                         
                         <div className='filterProduc'>
+                            <button onClick ={generatePDF}>Сгенерирование отчета</button>
                             <TextField hiddenLabel type="text" placeholder='filter by Product'  onChange={handleChange} id="filled-hidden-label-small" variant="filled" size="small" />
                             <AddProduct refreshItems={refreshItems}/>
                         </div>
